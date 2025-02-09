@@ -1,18 +1,11 @@
-/* Reset basic styling */
-* {
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* Main container setup */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -20,54 +13,53 @@ body {
     padding: 20px;
 }
 
-/* Header */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #222;
     padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 25px;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline-block;
+    list-style: none;
 }
 
 nav ul li a {
     color: white;
     font-size: 16px;
     text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: color 0.3s;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #ff5f57;
 }
 
-/* Hero Section */
 #hero {
-    background: linear-gradient(135deg, #007bff, #00d2ff);
+    background: linear-gradient(135deg, #6c63ff, #00d2ff);
     color: white;
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #ddd;
 }
 
 #hero h1 {
-    font-size: 2.8em;
-    font-weight: bold;
+    font-size: 2.6em;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -76,59 +68,75 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.btn-primary, .btn-secondary {
-    background-color: #ff5f57;
-    color: white;
-    padding: 12px 30px;
-    text-transform: uppercase;
-    font-weight: bold;
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cta-buttons a {
+    padding: 12px 25px;
     border-radius: 30px;
     font-size: 1.1em;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary {
     background-color: #00d2ff;
+    color: white;
 }
 
-.btn-primary:hover, .btn-secondary:hover {
+.btn-primary:hover {
+    background-color: #1e90ff;
+}
+
+.btn-secondary {
     background-color: #ff5f57;
+    color: white;
 }
 
-/* Sections */
+.btn-secondary:hover {
+    background-color: #ff4040;
+}
+
 section {
     padding: 60px 0;
-    background-color: #fff;
-    margin-bottom: 20px;
 }
 
-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
+h2 {
     text-align: center;
-    font-weight: 600;
+    font-size: 2.3em;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
 .executor-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
-    margin-top: 40px;
 }
 
 .executor-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.executor-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .executor-item h3 {
-    font-size: 1.6em;
-    margin-bottom: 15px;
-    font-weight: bold;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .executor-item p {
@@ -136,22 +144,13 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* Footer */
 footer {
-    background-color: #333;
+    background-color: #222;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 14px;
+    padding: 20px;
 }
 
-/* Media Query for Mobile */
-@media (max-width: 768px) {
-    #hero h1 {
-        font-size: 2.2em;
-    }
-
-    .btn-primary, .btn-secondary {
-        padding: 10px 20px;
-    }
+footer p {
+    font-size: 14px;
 }
