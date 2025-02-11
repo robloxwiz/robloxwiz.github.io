@@ -12,7 +12,6 @@ body {
     margin: auto;
 }
 
-/* Header */
 header {
     background-color: #222;
     padding: 20px 0;
@@ -44,7 +43,6 @@ nav ul li a:hover {
     color: #ffdd57;
 }
 
-/* Hero Section */
 #hero {
     background: linear-gradient(135deg, #3a3a3a, #222);
     text-align: center;
@@ -92,7 +90,6 @@ nav ul li a:hover {
     transform: translateY(-5px);
 }
 
-/* Executor Sections */
 section {
     padding: 50px 0;
     text-align: center;
@@ -156,7 +153,6 @@ section {
     background-color: #0088cc;
 }
 
-/* Footer */
 footer {
     background-color: #222;
     text-align: center;
