@@ -146,19 +146,3 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-
-.rgb-text {
-    font-size: 1rem;
-    font-weight: bold;
-    background: linear-gradient(90deg, red, blue, green, yellow, cyan, magenta);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rgbEffect 3s infinite linear;
-}
-
-@keyframes rgbEffect {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
