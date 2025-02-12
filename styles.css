@@ -42,6 +42,18 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffdd57;
 }
+
+#hero {
+    background: linear-gradient(135deg, #3a3a3a, #222);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    color: #ffdd57;
+}
+
 .cta-buttons {
     display: flex;
     justify-content: center;
