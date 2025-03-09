@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wiz Hub - Roblox Executors</title>
+    <title>Wiz Hub - Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,21 +17,34 @@
                     <li><a href="ios.html">iOS Executors</a></li>
                     <li><a href="and.html">Android Executors</a></li>
                     <li><a href="pc.html">PC Executors</a></li>
+                    <li><a href="scripts.html">Scripts</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="hero">
+    <section id="prompt">
         <div class="container">
-            <h2>Find the Best Executors</h2>
-            <div class="cta-buttons">
-                <a href="ios.html" class="btn-primary">iOS Executors</a>
-                <a href="and.html" class="btn-secondary">Android Executors</a>
-                <a href="pc.html" class="btn-primary">PC Executors</a>
-            </div>
+            <h2>What are you here for?</h2>
+            <button class="btn-primary" onclick="askDevice()">Executors</button>
+            <button class="btn-secondary" onclick="window.location.href='scripts.html'">Scripts</button>
         </div>
     </section>
+
+    <script>
+        function askDevice() {
+            let device = prompt("What device are you using? (iOS, Android, PC)").toLowerCase();
+            if (device === "ios") {
+                window.location.href = "ios.html";
+            } else if (device === "android") {
+                window.location.href = "and.html";
+            } else if (device === "pc") {
+                window.location.href = "pc.html";
+            } else {
+                alert("Invalid device. Please enter iOS, Android, or PC.");
+            }
+        }
+    </script>
 
     <footer>
         <div class="container">
