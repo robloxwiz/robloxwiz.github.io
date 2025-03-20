@@ -3,10 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://www.kingexploits.com/">
+    <title>Wiz Hub - Scripts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showScript() {
+            document.getElementById('script-container').style.display = 'block';
+        }
+        
+        function copyScript() {
+            const scriptText = `loadstring(game:HttpGet('https://raw.githubusercontent.com/new-qwertyui/Bloxstrap/refs/heads/main/loader.lua'))()`;
+            navigator.clipboard.writeText(scriptText).then(() => {
+                alert('Script Copied!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://www.kingexploits.com/">click here</a>.</p>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Wiz Hub</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="ios.html">iOS Executors</a></li>
+                    <li><a href="and.html">Android Executors</a></li>
+                    <li><a href="pc.html">PC Executors</a></li>
+                    <li><a href="scripts.html">Scripts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Scripts</h2>
+        <div class="cta-buttons">
+            <button class="btn-primary" onclick="showScript()">Mobile Bloxstrap</button>
+            <button class="btn-secondary" onclick="window.location.href='https://rscripts.net/'">More Scripts</button>
+        </div>
+        <div id="script-container" style="display: none; margin-top: 20px; text-align: center;">
+            <p>loadstring(game:HttpGet('https://raw.githubusercontent.com/new-qwertyui/Bloxstrap/refs/heads/main/loader.lua'))()</p>
+            <button class="btn" onclick="copyScript()">Copy Script</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Wiz Hub. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
