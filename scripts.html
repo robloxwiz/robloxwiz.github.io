@@ -37,15 +37,15 @@
         </div>
     </header>
 
-    <main class="container">
-        <h2>Scripts</h2>
-        <div class="cta-buttons">
-            <button class="btn-primary" onclick="showScript()">Mobile Bloxstrap</button>
-            <button class="btn-secondary" onclick="window.location.href='https://rscripts.net/'">More Scripts</button>
+    <main class="container" style="text-align: center;">
+        <h2 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px;">Scripts</h2>
+        <div class="cta-buttons" style="display: flex; justify-content: center; gap: 20px;">
+            <button class="btn-modern" onclick="showScript()">📱 Mobile Bloxstrap</button>
+            <button class="btn-modern-alt" onclick="window.location.href='https://rscripts.net/'">🚀 More Scripts</button>
         </div>
         <div id="script-container" style="display: none; margin-top: 20px; text-align: center;">
-            <p>loadstring(game:HttpGet('https://raw.githubusercontent.com/new-qwertyui/Bloxstrap/refs/heads/main/loader.lua'))()</p>
-            <button class="btn" onclick="copyScript()">Copy Script</button>
+            <p style="background: #222; padding: 10px; border-radius: 5px; display: inline-block;">loadstring(game:HttpGet('https://raw.githubusercontent.com/new-qwertyui/Bloxstrap/refs/heads/main/loader.lua'))()</p>
+            <button class="btn-copy" onclick="copyScript()">📋 Copy Script</button>
         </div>
     </main>
 
